@@ -1,12 +1,18 @@
 import React from 'react'
+import Cards from '../Components/Elements/Cards'
+import Dashboard from '../Components/Elements/Dashboard'
 import Hero from '../Components/Elements/Hero'
-import Faqs from '../Components/Utils/Faqs'
+import TopCollection from '../Components/Elements/TopCollection'
+
 
 const Home = () => {
   return (
     <>
+    <TopCollection/>
+    <Dashboard/>
     <Hero/>
-    <Faqs/>
+    <Cards/>
+    
     </>
   )
 }
