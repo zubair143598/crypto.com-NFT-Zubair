@@ -1,12 +1,65 @@
-// body
-// {
-//   background-color: #0B1426 !important;
-// }
+body
+{
+  background-color: #0B1426 !important;
+}
+
+.navbar {
+  background-color: #0B1426;
+  padding: 16px 30px !important;
+  z-index: 2;
+  .nav-item {
+    a {
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 0 12px;
+    }
+    .creat {
+      background: linear-gradient(90deg, #1199FA, #11D0FA);
+      border-radius: 4px;
+      line-height: 22px;
+      padding: 8px 24px !important;
+    }
+    .active {
+      color: #1199FA !important;
+    }
+    // .sign_in{
+    //     border-left: 1px solid rgb(182, 181, 181);
+    // }
+    // .sign_up{
+    //     border-left: 1px solid rgb(182, 181, 181);
+    // }
+  }
+  form {
+    width: 30%;
+  }
+  .form-control {
+    border: 1px solid rgb(182, 181, 181);
+    border-radius: 20px !important;
+    background-color: #0B1426;
+    color: white;
+    &:hover {
+      border: 2px solid #1199FA;
+      background-color: rgb(182, 181, 181);
+    }
+  }
+}
+
+.offcanvas
+{
+  
+   position: sticky !important;
+    top: 66px !important;
+}
+
+
+
+
 
 :root
 {
   --offcanvas-with: 270px;
-  --topNavbarHeight:362px;
+  --topNavbarHeight:360px;
 }
 //scrollbar
 ::-webkit-scrollbar{
@@ -17,6 +70,7 @@
 }
 
 .sidebar {
+  
   .offcanvas-body{
     height: 80vh;
   overflow-y: scroll;
@@ -89,8 +143,60 @@
     visibility: visible !important;
     top: var(--topNavbarHeight) !important;
     height: calc(100% - var(--topNavbarHeight)) !important;
+    position: sticky !important;
+    top: 66px !important;
     // left: 48px;
     // top: 125px !important;
     // height: 100% !important;
   }  
+}
+
+//Marketplace-section
+.Marketplace-section
+{
+.container
+{
+  padding: 30px;
+}
+  .img1
+  {
+    background-color: #e3e3e3FF;
+    margin-top: 8rem;
+    border-radius: 15px;
+  }
+  .col2
+  {
+    margin-top: 8rem;
+    margin-left: 20px;
+  }
+}
+
+
+//
+.placeBit
+{
+  background: linear-gradient(90deg, #1199FA, #11D0FA);
+  border:none ;
+  padding: 10px 50px;
+}
+.shd
+{
+  box-shadow: 0 4px 40px rgb(0 0 0 / 10%);
+  position: sticky;
+  top: 0;
+}
+
+//TopCollection-section 
+.TopCollection-section 
+{
+  .card-body
+  {
+    img{
+      transition: all 0.4s linear;
+        &:hover {
+          transform: scale(1.1);
+        }
+
+    }
+  }
 }

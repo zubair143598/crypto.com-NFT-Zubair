@@ -8,11 +8,12 @@ import TopCollection from '../Components/Elements/TopCollection'
 const Home = () => {
   return (
     <>
-    <TopCollection/>
-    <Dashboard/>
-    <Hero/>
-    <Cards/>
     
+    <TopCollection/>
+    <div className='d-flex'>
+    <Dashboard/>
+    <Cards/>
+    </div>
     </>
   )
 }

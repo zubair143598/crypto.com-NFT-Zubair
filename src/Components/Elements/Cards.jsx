@@ -6,8 +6,11 @@ const Cards = () => {
     // console.log(state)
   const navigate = useNavigate();
   
-    navigate("/marketplace", {state});
-
+  const component=(v)=>
+  {
+    navigate("/marketplace", {state:v});
+    
+  }
   const data = [
     {
       img: "./Assists/card1.gif",
@@ -115,11 +118,11 @@ const Cards = () => {
   ];
 
   return (
-    <div className="Cards-section">
+    <div className="Cards-section bg-black  w-75">
       <div className="container">
         <div className="row my-5">
-          <div className="col-md-2"></div>
-          <div className="col-md-10">
+          
+          <div className="col-md-12">
             <div className="row ">
               {data.map((v, i) => {
                 return (
@@ -129,7 +132,7 @@ const Cards = () => {
                       <div className="card  "
                       onClick={()=>
                     {
-                        setState(v)
+                        component(v)
                     }}
                       style={{ border: "none" }}>
                         <div className="card-body p-0">

@@ -1,73 +1,96 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-
 const Header = () => {
   return (
-    <nav className="navbar header  sticky-top navbar-expand-lg bg-dark ">
-    <div className="container-fluid">
-       {/* offcanvas trigger */}
-       <button
-        className="  navbar-toggler"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasExample"
-        aria-controls="offcanvasExample"
+    <>
+      <nav
+        className="navbar fixed-top navbar-expand-lg "
+        style={{ zIndex: "1" }}
       >
-       <span className="navbar-toggler-icon bg-white " /> 
-      </button>
-      {/* offcanvas trigger */}
-      <a className=" nav-link active" aria-current="page" href="#">
-        <img src="./Assists/logo.svg  " alt="" className="logo p-1" />
-      </a>
-
-      <button
-        className=" color navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <Link className="nav-link text-white fs-5 clr" aria-current="page" to="Home">
-            Features
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link text-white clr fs-5" to="OurTeam">
-            Litepaper
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link text-white fs-5 clr" to="Swap">
-            Platform
-            </Link>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white fs-5 clr" href="#">
-            Roadmap
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white fs-5 clr" href="#">
-              FAQs
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-white fs-5 clr" href="#">
-            Audit Report
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  )
-}
-
-export default Header
+        <div className="container-fluid">
+          {/* offcanvas trigger */}
+          <button
+            className="  navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <span className="navbar-toggler-icon bg-white " />
+          </button>
+          {/* offcanvas trigger */}
+          <Link className="navbar-brand " to="/">
+            <img
+              src="./Assists/logo.svg"
+              className="img-fluid "
+              // style={{ width: "100%" }}
+              alt="logo"
+            />
+          </Link>
+          <form className="d-flex mx-4 ">
+            <input
+              className="form-control  me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav    text-center mb-2  mb-lg-0">
+              <li className="nav-item ">
+                <Link className="nav-link active" aria-current="page" to="/">
+                  Marketplace
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">
+                  Drops
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">
+                  Brands
+                </Link>
+              </li>
+              <li className="nav-item ">
+                <Link className="nav-link creat" to="#">
+                  Create
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link sign_in" to="#">
+                  Sign in
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link " to="#">
+                  SignUp
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link sign_up" to="#">
+                  English
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
+};
+export default Header;
