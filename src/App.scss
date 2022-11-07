@@ -69,6 +69,22 @@ body
   background-color: #6B6D8C;
 }
 
+// @media screen and (max-width: 992px) 
+// {
+//   .sidebar
+//   {
+//     width: 70% !important;
+//   }
+// }
+@media screen and (max-width: 992px)
+{
+  .sidebar
+  {
+    .offcanvas-body{
+      width: 0 ;
+    }
+  }
+}
 .sidebar {
   
   .offcanvas-body{
@@ -78,7 +94,7 @@ body
   //   position: fixed;
     // width: 25%;
     width: var(--offcanvas-with) !important;
-  width: 270px !important;
+  width: 270px ;
 
     // height: 500px;
   height: 100% !important;
@@ -134,16 +150,20 @@ body
 //   width: var(--offcanvas-with) !important;
 //   width: 270px !important;
 // }
-
+.dashboard{
+  width: 0;
+}
 @media screen and (min-width: 992px) 
 {
-  .sidebar
-  {
+  .dashboard{
+    width: auto;
+  }
+  .sidebar{
     transform: none !important;
     visibility: visible !important;
     top: var(--topNavbarHeight) !important;
     height: calc(100% - var(--topNavbarHeight)) !important;
-    position: sticky !important;
+    position: webkit-sticky !important;
     top: 66px !important;
     // left: 48px;
     // top: 125px !important;
@@ -199,4 +219,12 @@ body
 
     }
   }
+}
+
+@media screen and (max-width:992) 
+{
+  .graycol
+  {
+    width: 100% !important;
+  }  
 }

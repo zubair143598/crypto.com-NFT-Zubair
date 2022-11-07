@@ -8,17 +8,7 @@ const Header = () => {
         style={{ zIndex: "1" }}
       >
         <div className="container-fluid">
-          {/* offcanvas trigger */}
-          <button
-            className="  navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample"
-            aria-controls="offcanvasExample"
-          >
-            <span className="navbar-toggler-icon bg-white " />
-          </button>
-          {/* offcanvas trigger */}
+          
           <Link className="navbar-brand " to="/">
             <img
               src="./Assists/logo.svg"
@@ -43,6 +33,7 @@ const Header = () => {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{backgroundColor:"white"}}
           >
             <span className="navbar-toggler-icon" />
           </button>
@@ -57,7 +48,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="#">
+                <Link className="nav-link" to="Changing">
                   Drops
                 </Link>
               </li>

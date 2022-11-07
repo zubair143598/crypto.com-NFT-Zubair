@@ -5,6 +5,7 @@ import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Base from './Components/Layout/Base';
 import Home from "./Pages/Home"
 import Marketplace from './Components/Elements/Marketplace';
+import Changing from './Components/Elements/Changing';
 function App() {
   return (
    <>
@@ -12,8 +13,10 @@ function App() {
    <Base>
    <Routes>
     <Route index path='/' element={<Home/>} />
-    <Route index path='/home' element={<Home/>} />
-    <Route path='/marketplace' element={<Marketplace/>} />
+    <Route index path='home' element={<Home/>} />
+    <Route path='marketplace' element={<Marketplace/>} />
+    <Route path='Changing' element={<Changing/>} />
+
 
 
    </Routes>

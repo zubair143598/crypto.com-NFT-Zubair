@@ -7,8 +7,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Dashboard = () => {
   return (
-    <div 
-    className="offcanvas sidebar w-25  bg-black offcanvas-start sidebar-nav"
+    <div className="dashboard">
+      <div 
+    className="offcanvas sidebar  bg-black offcanvas-start sidebar-nav"
         tabIndex={-1}
         id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel"
@@ -125,6 +126,7 @@ const Dashboard = () => {
                 </div>
             </div>
         </div>
+    </div>
   );
 };
 

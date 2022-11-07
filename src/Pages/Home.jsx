@@ -10,7 +10,7 @@ const Home = () => {
     <>
     
     <TopCollection/>
-    <div className='d-flex'>
+    <div className='d-flex justify-content-center'>
     <Dashboard/>
     <Cards/>
     </div>

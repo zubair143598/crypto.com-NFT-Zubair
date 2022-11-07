@@ -118,16 +118,18 @@ const Cards = () => {
   ];
 
   return (
-    <div className="Cards-section bg-black  w-75">
+    <div className="Cards-section bg-black  ">
       <div className="container">
-        <div className="row my-5">
+        <div className="row my-5 justify-content-center">
           
-          <div className="col-md-12">
-            <div className="row ">
+          {/* <div className=""> */}
+            {/* <div className="row "> */}
               {data.map((v, i) => {
                 return (
                   <>
-                    <div className="col-md-3 mt-5">
+                    <div className="col-sm-6 col-md-4 col-lg-3 my-3"
+                    
+                    >
 
                       <div className="card  "
                       onClick={()=>
@@ -194,13 +196,13 @@ const Cards = () => {
 
                           <div className="row">
                             <div
-                              className=" col-md-8  ms-3 rounded mb-2 "
+                              className=" col-lg-8 graycol ms-3 rounded mb-2 "
                               style={{
-                                backgroundColor: "#e0e0e0",
+                                backgroundColor: "#e0e0e0",width:"65%"
                               }}
                             >
-                              <div className="row  ">
-                                <div className="col-md-4 ms-1 p-0 m-0">
+                              <div className="row   ">
+                                <div className="col-lg-4 col-6 d-flex justify-content-between align-items-center ms-1 ">
                                   <p
                                     className=""
                                     style={{
@@ -210,7 +212,7 @@ const Cards = () => {
                                     {v.text3}
                                   </p>
                                 </div>
-                                <div className="col-md-4 text-end p-0 m-0">
+                                <div className="col-lg-4  col-5 p-0 m-0">
                                   <p
                                     className=""
                                     style={{
@@ -222,7 +224,7 @@ const Cards = () => {
                                 </div>
                               </div>
                               <div className="row ">
-                                <div className="col-md-5  ">
+                                <div className="col-lg-5 col-6 ">
                                   <p
                                     className="0"
                                     style={{
@@ -232,7 +234,7 @@ const Cards = () => {
                                     {v.text4}
                                   </p>
                                 </div>
-                                <div className="col-md-4 ">
+                                <div className="col-lg-4 col-4">
                                   <p
                                     className=""
                                     style={{
@@ -245,7 +247,7 @@ const Cards = () => {
                               </div>
                             </div>
                             <div
-                              className="col-md-2 m-1 pt-3 rounded-4 mb-2"
+                              className="col-lg-3  text-center m-1 pt-3 rounded-4 mb-2"
                               style={{
                                 fontSize: "14px",
                                 backgroundColor: "#1199fa1A",
@@ -260,8 +262,8 @@ const Cards = () => {
                   </>
                 );
               })}
-            </div>
-          </div>
+            {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
     </div>
